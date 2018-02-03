@@ -1,0 +1,42 @@
+html{
+        font-size:62.5%;
+    }
+    body{
+        background:#68cdd5;
+        font-size:1.6rem;
+        color:#fff;
+        margin:0;
+    }
+    .back{
+        position:absolute;
+        top: 2%;
+        left:5%;
+        width:100%;
+    }
+    .logo{
+        position:absolute;
+        top: 10%;
+        text-align: center;
+        width:100%;
+    }
+    .text{
+        position:absolute;
+        top:30%;
+        left:15%;
+        width:70%;
+        line-height:2.5rem;
+    }
+    .icon_left,.icon_right{
+        position:absolute;
+        top:60%;
+    }
+    .icon_left{
+        left:15%;
+    }
+    .icon_right{
+        right:15%;
+    }
+    .message{
+    position:relative;
+
+    }
