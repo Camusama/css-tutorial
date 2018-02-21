@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title></title>
+    <style type="text/css" media="screen">
+    header .img-wrap{
+        float:right;
+    }
+    header .row1{
+        line-height:40px;
+    }
+    .row1 .tel-num{
+        color:#56a087;
+    }
+    .row1 .img-wrap{
+        padding-right:11px;
+    }
+    .row1 .img-wrap a{
+        margin-left:22px;
+    }
+    header .row2{
+        line-height:100px;
+        background-color:#1cb177;
+    }
+    .row2 a{
+        float:right;
+        height:100px;
+        width:50px;
+        text-align:center;
+        color:white;
+        margin-left:2.5vw;
+    }
+    .row2 a:hover{
+        border-bottom:2px solid white;
+        text-decoration:none;
+    }
+    @media (max-width:383px){
+           .row2 a{
+        display:none;
+    }
+    }
+    .fz-14{
+        font-size:14px;
+    }
+    .fz-12{
+        font-size:12px;
+    }
+    .mid{
+        text-align:center;
+    }
+    .fc-grey{
+        color:#c8c8c8;
+    }
+    .fc-green{
+        color:#1ba36e;
+    }
+    .img-mid{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+    .parent-mid{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .carousel-control .icon{
+        font-size:100px;
+    }
+    .wrap{
+        margin-top:90px;
+    }
+    .wrap .sp{
+
+    }
+    .sp-cell{
+        margin-top:70px;
+        margin-bottom:58px;
+    }
+    .sp-img{
+        position:relative;
+        left:50%;
+        transform:translateX(-50%);
+        height:62px;
+    }
+    .sp-person{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        height:150px;
+        line-height:25px;
+        border-left:1px #c8c8c8 dashed;
+    }
+    .path-title{
+
+    }
+    .path-row{
+
+    }
+    .path-row .path-cell{
+        margin-top:35px;
+        margin-bottom:29px;
+        padding:0;
+        height:50px;
+    }
+    .path-row .path-circle{
+        width:40px;
+        height:40px;
+        border:1px solid #dfdfdf;
+        border-radius:50%;
+        color:#1db176;
+        margin-left:-10px;
+    }
+    .path-word{
+        line-height:18px;
+    }
+    .path-icon{
+        left:auto;
+        right: 1px;
+        width:22px;
+        transform:translate(30%,-50%);
+    }
+
+
+    </style>
+</head>
+<body>
+    <header id="header" class="">
+        <div class="container-fluid">
+            <div class="row row1">
+                <div class="col-sm-8 col-sm-push-2">
+                    <span class="tel-num hidden-xs">咨询电话：010-59478634</span>
+                     <div class="img-wrap">
+                        <a href=""><img src="header.img/wechat.jpg" alt=""></a>
+                        <a href=""><img src="header.img/qq.jpg" alt=""></a>
+                        <a href=""><img src="header.img/webok.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row row2">
+                <div class="col-sm-8 col-sm-push-2">
+                    <img src="header.img/log.jpg" alt="">
+                    <a href="">关于</a>
+                    <a href="">推荐</a>
+                    <a href="">职业</a>
+                    <a href="">首页</a>
+                </div>
+            </div>
+        </div>
+    </header><!-- /header -->
+    <div id="myCarousel" class="carousel slide">
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner">
+        <div class="item active">
+            <img src="首页img/carousel.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="首页img/carousel.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="首页img/carousel.jpg" alt="">
+        </div>
+        </div>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="carousel-control left" href="#myCarousel"
+       data-slide="prev">
+            <div class="icon img-mid">
+                &lsaquo;
+            </div>
+       </a>
+        <a class="carousel-control right" href="#myCarousel"
+       data-slide="next">
+            <div class="icon img-mid">
+                &rsaquo;
+            </div>
+        </a>
+    </div>
+    <div class="container-fluid wrap">
+        <div class="row">
+            <div class="col-sm-8 col-sm-push-2">
+                <div class="col-md-3 col-sm-12 sp-cell">
+                    <img class="sp-img" src="首页img/rocket.png" alt="roket">
+                    <h4 class="fz-14 mid">高效</h4>
+                    <p class="fz-12 fc-grey mid">将五到七年的成长时间,缩短到一年到三年。</p>
+                </div>
+                <div class="col-md-3 col-sm-12 sp-cell">
+                    <img class="sp-img" src="首页img/book.png" alt="roket">
+                    <h4 class="fz-14 mid">规范</h4>
+                    <p class="fz-12 fc-grey mid">标准的实战教程，不会走弯路</p>
+                </div>
+                <div class="col-md-3 col-sm-12 sp-cell">
+                    <img class="sp-img" src="首页img/shape.png" alt="roket">
+                    <h4 class="fz-14 mid">人脉</h4>
+                    <p class="fz-12 fc-grey mid">同班好友，同院学长，技术大师，入学就是混入职业圈，为以后铺平道路</p>
+                </div>
+                <div class="col-md-3 col-sm-12 sp-cell sp-person">
+                    <span class="fz-14 fc-green">
+                        <img src="首页img/user.jpg" alt="" style="margin-right: 10px">
+                        12400
+                    </span>
+                    <span class="fc-grey" style="margin-bottom: 10px;">
+                        累计在线学习人数
+                    </span>
+                    <span class="fz-14 fc-green">
+                        <img src="首页img/user.jpg" alt="" style="margin-right: 10px">
+                        12400
+                    </span>
+                    <span class="fc-grey" style="margin-bottom:10px;display:inline-block;">
+                        学院已经满意找到工作
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row path-title">
+            <div class="col-xs-12 mid">
+                <h4>如何学习</h4>
+            </div>
+        </div>
+        <div class="row path-row">
+            <div class="col-sm-8 col-sm-push-2">
+                <div class="col-md-3 col-sm-12 path-cell parent-mid">
+                    <div class="col-xs-3">
+                        <div class="path-circle parent-mid">
+                            1
+                        </div>
+                    </div>
+                    <div class="col-xs-9 fz-12 fc-grey path-word">
+                        匹配你现在的个人情况寻找适合自己的岗位
+                    </div>
+                        <img  class="path-icon img-mid" src="首页img/icon.png" alt="">
+                </div>
+                <div class="col-md-3 col-sm-12 path-cell parent-mid">
+                    <div class="col-xs-3">
+                        <div class="path-circle parent-mid">
+                            2
+                        </div>
+                    </div>
+                    <div class="col-xs-9 fz-12 fc-grey">
+                        了解职业前景薪金待遇职业压力等
+                    </div>
+                        <img  class="path-icon img-mid" src="首页img/icon.png" alt="">
+                </div>
+                <div class="col-md-3 col-sm-12 path-cell parent-mid">
+                    <div class="col-xs-3">
+                        <div class="path-circle parent-mid">
+                            3
+                        </div>
+                    </div>
+                    <div class="col-xs-9 fz-12 fc-grey">
+                        掌握行业顶级技能
+                    </div>
+                        <img  class="path-icon img-mid" src="首页img/icon.png" alt="">
+                </div>
+                <div class="col-md-3 col-sm-12 path-cell parent-mid">
+                    <div class="col-xs-3">
+                        <div class="path-circle parent-mid">
+                            4
+                        </div>
+                    </div>
+                    <div class="col-xs-9 fz-12 fc-grey path-word">
+                        查看职业目标任务
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row path-row">
+            <div class="col-sm-8 col-sm-push-2">
+                <div class="col-md-3 col-sm-12 path-cell parent-mid">
+                    <div class="col-xs-3">
+                        <div class="path-circle parent-mid">
+                            1
+                        </div>
+                    </div>
+                    <div class="col-xs-9 fz-12 fc-grey path-word">
+                        匹配你现在的个人情况寻找适合自己的岗位
+                    </div>
+                        <img  class="path-icon img-mid" src="首页img/icon.png" alt="">
+                </div>
+                <div class="col-md-3 col-sm-12 path-cell parent-mid">
+                    <div class="col-xs-3">
+                        <div class="path-circle parent-mid">
+                            2
+                        </div>
+                    </div>
+                    <div class="col-xs-9 fz-12 fc-grey">
+                        了解职业前景薪金待遇职业压力等
+                    </div>
+                        <img  class="path-icon img-mid" src="首页img/icon.png" alt="">
+                </div>
+                <div class="col-md-3 col-sm-12 path-cell parent-mid">
+                    <div class="col-xs-3">
+                        <div class="path-circle parent-mid">
+                            3
+                        </div>
+                    </div>
+                    <div class="col-xs-9 fz-12 fc-grey">
+                        掌握行业顶级技能
+                    </div>
+                        <img  class="path-icon img-mid" src="首页img/icon.png" alt="">
+                </div>
+                <div class="col-md-3 col-sm-12 path-cell parent-mid">
+                    <div class="col-xs-3">
+                        <div class="path-circle parent-mid">
+                            4
+                        </div>
+                    </div>
+                    <div class="col-xs-9 fz-12 fc-grey path-word">
+                        查看职业目标任务
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
