@@ -9,6 +9,9 @@
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title></title>
     <style type="text/css" media="screen">
+    h4{
+        font-size:18px;
+    }
     header .img-wrap{
         float:right;
     }
@@ -44,6 +47,9 @@
            .row2 a{
         display:none;
     }
+    }
+    .fz-16{
+        font-size:16px;
     }
     .fz-14{
         font-size:14px;
@@ -113,8 +119,8 @@
         height:50px;
     }
     .path-row .path-circle{
-        width:40px;
-        height:40px;
+        width:60px;
+        height:60px;
         border:1px solid #dfdfdf;
         border-radius:50%;
         color:#1db176;
@@ -122,19 +128,198 @@
     }
     .path-word{
         line-height:18px;
+        padding-left:4.5%;
     }
     .path-icon{
         left:auto;
-        right: 1px;
+        right:50%;
         width:22px;
         transform:translate(30%,-50%);
     }
+    .path-4{
+        display:none;
+    }
+    .sp-title{
+        margin:20px 0 20px 0;
+    }
     .sp-row{
+        padding:0;
         display:flex;
-
+        justify-content:center;
     }
 
+    .sp-row .sp-wrap{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        width:130%;
+        padding:20px 30px;
+        margin-right:25px;
+        margin-bottom:20px;
+        border:1px solid #f4f4f4;
+        box-shadow:2px 2px #dedede;
+    }
+    .sp-wrap img{
+        width:90px;
+    }
+    .carousel-sp .carousel-indicators{
+        bottom:-20px;
+        left:49.5%;
+    }
+    .carousel-sp .carousel-indicators li {
+    background-color: rgb(240, 240, 240);
+    }
+    .carousel-sp .carousel-indicators .active {
+    background-color:rgb(41, 176, 120);
+    }
+    .cooperate-title{
+        margin-top:60px;
+    }
+    .cooperate-row{
 
+    }
+    .cooperate-row a{
+        position:relative;
+        width:20%;
+        height:170px;
+        min-width:193px;
+        margin-top:10px;
+        float:left;
+        box-shadow:1px 1px 1px #dbdbdb;
+        background:white;
+    }
+    .cooperate-row a:hover{
+        border: #e5eaea 2px solid;
+        border-radius: 3%;
+        transform: scale(1.1,1.1);
+        z-index: 9;
+    }
+    footer{
+        margin-top:100px;
+    }
+    footer .ui{
+        width:100%;
+        margin-left:3%;
+        padding:0;
+        color:#c8c8c8;
+    }
+    footer .ui li{
+        width:10%;
+        padding:0;
+        float:left;
+        list-style-position:inside;
+    }
+    footer .ui li a{
+        line-height:14px;
+        font-size:14px;
+        display:inline-block;
+        color:#c8c8c8;
+    }
+    footer .ft-wrap{
+        background-color:#1aa36f;
+        color:white;
+    }
+    .ft-wrap a{
+        color:white;
+    }
+    .ft-wrap .col1{
+        margin:35px 0 30px 0;
+        height:100px;
+        padding-left:45px;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+    }
+    .ft-wrap .col2{
+        margin:35px 0 30px 0;
+        height:100px;
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-end;
+        flex-wrap:wrap;
+
+    }
+    .ft-wrap span{
+        line-height:33px;
+        margin-right:20px;
+    }
+    .ft-wrap .col3 img{
+        margin-top:-7px;
+        width:94px;
+
+    }
+    .col3 .erweima{
+        float:right;
+        margin-top:20px;
+    }
+    footer .ft-bottom{
+        line-height:35px;
+        text-align:center;
+        color:white;
+        border-top:1px solid #2ab983;
+        background-color:#1aa36f;
+
+    }
+    @media (max-width: 768px){
+        .path-cell{
+            margin-left:30px;
+        }
+        .cooperate-row a{
+            width:80%;
+        }
+        footer .link-wrap{
+        display:flex;
+        justify-content:space-around;
+        }
+        footer .link-row{
+            width:50%;
+            float:left;
+        }
+        footer .ui li{
+            width:80%;
+        }
+        .ft-wrap .col1{
+            padding-left:15px;
+        }
+        .ft-wrap .col2{
+            width:50%;
+        }
+        .col3 .erweima{
+            float:left;
+        }
+    }
+    @media (max-width: 992px){
+        .sp-person{
+            border:none;
+        }
+        .path-cell .col-xs-2{
+            position:absolute;
+            width:60%;
+        }
+        .path-icon{
+            top: 45px;
+            transform:rotate(90deg);
+        }
+        .path-row .path-circle{
+            left:50%;
+        }
+        .path-4{
+            display:block;
+        }
+        .path-wrap{
+            padding:0 20px 0 20px;
+        }
+        .cooperate-row{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        margin-top:10px;
+        justify-content:center;
+        align-content:center;
+        }
+    }
+
+    }
 
     </style>
 </head>
@@ -197,9 +382,9 @@
             </div>
         </a>
     </div>
-    <div class="container-fluid wrap">
+    <div class="container wrap">
         <div class="row">
-            <div class="col-sm-8 col-sm-push-2">
+            <div>
                 <div class="col-md-3 col-sm-12 sp-cell">
                     <img class="sp-img" src="首页img/rocket.png" alt="roket">
                     <h4 class="fz-14 mid">高效</h4>
@@ -239,17 +424,19 @@
             </div>
         </div>
         <div class="row path-row">
-            <div class="col-sm-8 col-sm-push-2">
+            <div class="path-wrap">
                 <div class="col-md-3 col-sm-12 path-cell parent-mid">
                     <div class="col-xs-3">
                         <div class="path-circle parent-mid">
                             1
                         </div>
                     </div>
-                    <div class="col-xs-9 fz-12 fc-grey path-word">
-                        匹配你现在的个人情况寻找适合自己的岗位
+                    <div class="col-xs-7 fz-12 fc-grey path-word">
+                        匹配你现在的寻找适合自己的岗位
                     </div>
+                    <div class="col-xs-2">
                         <img  class="path-icon img-mid" src="首页img/icon.png" alt="">
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-12 path-cell parent-mid">
                     <div class="col-xs-3">
@@ -257,10 +444,12 @@
                             2
                         </div>
                     </div>
-                    <div class="col-xs-9 fz-12 fc-grey">
+                    <div class="col-xs-7 fz-12 fc-grey path-word">
                         了解职业前景薪金待遇职业压力等
                     </div>
+                    <div class="col-xs-2">
                         <img  class="path-icon img-mid" src="首页img/icon.png" alt="">
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-12 path-cell parent-mid">
                     <div class="col-xs-3">
@@ -268,10 +457,12 @@
                             3
                         </div>
                     </div>
-                    <div class="col-xs-9 fz-12 fc-grey">
+                    <div class="col-xs-7 fz-12 fc-grey path-word">
                         掌握行业顶级技能
                     </div>
-                        <img  class="path-icon img-mid" src="首页img/icon.png" alt="">
+                    <div class="col-xs-2">
+                         <img  class="path-icon img-mid" src="首页img/icon.png" alt="">
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-12 path-cell parent-mid">
                     <div class="col-xs-3">
@@ -279,79 +470,117 @@
                             4
                         </div>
                     </div>
-                    <div class="col-xs-9 fz-12 fc-grey path-word">
+                    <div class="col-xs-7 fz-12 fc-grey path-word">
                         查看职业目标任务
+                    </div>
+                    <div class="col-xs-2 path-4">
+                        <img  class="path-icon img-mid" src="首页img/icon.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
         <div class="row path-row">
-            <div class="col-sm-8 col-sm-push-2">
+            <div class="path-wrap">
                 <div class="col-md-3 col-sm-12 path-cell parent-mid">
                     <div class="col-xs-3">
                         <div class="path-circle parent-mid">
-                            1
+                            5
                         </div>
                     </div>
-                    <div class="col-xs-9 fz-12 fc-grey path-word">
-                        匹配你现在的个人情况寻找适合自己的岗位
+                    <div class="col-xs-7 fz-12 fc-grey path-word">
+                        参考学习资源，掌握技能点，逐个完成任务
                     </div>
+                    <div class="col-xs-2">
                         <img  class="path-icon img-mid" src="首页img/icon.png" alt="">
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-12 path-cell parent-mid">
                     <div class="col-xs-3">
                         <div class="path-circle parent-mid">
-                            2
+                            6
                         </div>
                     </div>
-                    <div class="col-xs-9 fz-12 fc-grey">
-                        了解职业前景薪金待遇职业压力等
+                    <div class="col-xs-7 fz-12 fc-grey path-word">
+                        加入班级，和小伙伴互助学习
                     </div>
+                    <div class="col-xs-2">
                         <img  class="path-icon img-mid" src="首页img/icon.png" alt="">
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-12 path-cell parent-mid">
                     <div class="col-xs-3">
                         <div class="path-circle parent-mid">
-                            3
+                            7
                         </div>
                     </div>
-                    <div class="col-xs-9 fz-12 fc-grey">
-                        掌握行业顶级技能
+                    <div class="col-xs-7 fz-12 fc-grey path-word">
+                        选择导师，一路引导，加速成长
                     </div>
-                        <img  class="path-icon img-mid" src="首页img/icon.png" alt="">
+                    <div class="col-xs-2">
+                         <img  class="path-icon img-mid" src="首页img/icon.png" alt="">
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-12 path-cell parent-mid">
                     <div class="col-xs-3">
                         <div class="path-circle parent-mid">
-                            4
+                            8
                         </div>
                     </div>
-                    <div class="col-xs-9 fz-12 fc-grey path-word">
-                        查看职业目标任务
+                    <div class="col-xs-7 fz-12 fc-grey path-word">
+                        完成职业技能，升级职业大牛
+                    </div>
+                    <div class="col-xs-2 path-4">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row path-title">
+        <div class="row sp-title">
             <div class="col-xs-12 mid">
                 <h4>优秀学员展示</h4>
             </div>
         </div>
-        <div id="myCarousel" class="carousel slide">
+        <div id="myCarousel" class="carousel slide carousel-sp">
             <!-- 轮播（Carousel）指标 -->
             <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
             <!-- 轮播（Carousel）项目 -->
             <div class="carousel-inner">
             <div class="item active">
                 <div class="row">
-                    <div class="col-sm-8 col-sm-push-2">
+                    <div class="">
                         <div class="col-sm-12 col-md-3 sp-row">
-
+                            <div class="sp-wrap">
+                                <img src="首页img/man1.jpg">
+                                <h4>技术顾问：罗大佑</h4>
+                                <p class="fc-grey fz-12">百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设</p>
+                            </div>
                         </div>
+                        <div class="col-sm-12 col-md-3 sp-row">
+                            <div class="sp-wrap">
+                                <img src="首页img/girl1.jpg">
+                                <h4>技术顾问：罗大佑</h4>
+                                <p class="fc-grey fz-12">百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-3 sp-row">
+                            <div class="sp-wrap">
+                                <img src="首页img/man2.jpg">
+                                <h4>技术顾问：罗大佑</h4>
+                                <p class="fc-grey fz-12">百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-3 sp-row">
+                            <div class="sp-wrap">
+                                <img src="首页img/girl2.jpg">
+                                <h4>技术顾问：罗大佑</h4>
+                                <p class="fc-grey fz-12">百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -362,7 +591,99 @@
             </div>
             </div>
         </div>
+        <div class="row cooperate-title">
+            <div class="col-xs-12 mid">
+                <h4>战略合作伙伴</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cooperate-row">
+                <a href="">
+                    <img class="img-mid" src="首页img/ali.jpg">
+                </a>
+                <a href="">
+                    <img class="img-mid" src="首页img/gold.jpg">
+                </a>
+                <a href="">
+                    <img class="img-mid" src="首页img/huanxin.jpg">
+                </a>
+                <a href="">
+                    <img class="img-mid" src="首页img/ronglian.jpg">
+                </a>
+                <a href="">
+                    <img class="img-mid" src="首页img/qiniu.jpg">
+                </a>
+            </div>
+        </div>
     </div>
+    <footer>
+        <div class="footer-title mid">
+            <h4>友情链接</h4>
+        </div>
+        <div class="link-wrap container">
+            <div class="link-row">
+                <ul class="ui">
+                    <li><a href="">手机软件</a></li>
+                    <li><a href="">手机软件</a></li>
+                    <li><a href="">手机软件</a></li>
+                    <li><a href="">手机软件</a></li>
+                    <li><a href="">手机软件</a></li>
+                    <li><a href="">手机软件</a></li>
+                    <li><a href="">手机软件</a></li>
+                    <li><a href="">手机软件</a></li>
+                    <li><a href="">手机软件</a></li>
+                    <li><a href="">手机软件</a></li>
+                </ul>
+            </div>
+            <div class="link-row">
+                <ul class="ui">
+                    <li><a href="">手机软件</a></li>
+                    <li><a href="">手机软件</a></li>
+                    <li><a href="">手机软件</a></li>
+                    <li><a href="">手机软件</a></li>
+                    <li><a href="">手机软件</a></li>
+                    <li><a href="">手机软件</a></li>
+                    <li><a href="">手机软件</a></li>
+                    <li><a href="">手机软件</a></li>
+                    <li><a href="">手机软件</a></li>
+                    <li><a href="">手机软件</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ft-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col1">
+                        <span class="fz-16">技能树-改变你我</span>
+                        <span>
+                            <a href="">关于我们</a>&nbsp;|
+                            <a href="">联系我们</a>&nbsp;|
+                            <a href="">友情链接</a>
+                        </span>
+                    </div>
+                    <div class="col-sm-3 col2">
+                        <span>旗下网站</span>
+                        <span><a href="" title="">草船云孵化器</a></span>
+                        <span><a href="" title="">葡萄糖精游戏</a></span>
+                        <span><a href="" title="">最强it特训营</a></span>
+                        <span><a href="" title="">桌游精灵</a></span>
+                    </div>
+                    <div class="col-sm-5 col3">
+                        <div class="erweima">
+                            <p class="fz-16">微信公众平台</p>
+                            <img src="首页img/erweima.jpg">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ft-bottom">
+            Copyright &nbsp;© 2015技能树 www.jnshu.com
+             All Rights Reserved &nbsp;｜&nbsp; 京ICP备13005880号
+        </div>
+
+    </footer>
 
 </body>
 </html>
