@@ -4,330 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <title></title>
-    <style type="text/css" media="screen">
-    h4{
-        font-size:18px;
-    }
-    header .img-wrap{
-        float:right;
-    }
-    header .row1{
-        line-height:40px;
-    }
-    .row1 .tel-num{
-        color:#56a087;
-    }
-    .row1 .img-wrap{
-        padding-right:11px;
-    }
-    .row1 .img-wrap a{
-        margin-left:22px;
-    }
-    header .row2{
-        line-height:100px;
-        background-color:#1cb177;
-    }
-    .row2 a{
-        float:right;
-        height:100px;
-        width:50px;
-        text-align:center;
-        color:white;
-        margin-left:2.5vw;
-    }
-    .row2 a:hover{
-        border-bottom:2px solid white;
-        text-decoration:none;
-    }
-    @media (max-width:383px){
-           .row2 a{
-        display:none;
-    }
-    }
-    .fz-16{
-        font-size:16px;
-    }
-    .fz-14{
-        font-size:14px;
-    }
-    .fz-12{
-        font-size:12px;
-    }
-    .mid{
-        text-align:center;
-    }
-    .fc-grey{
-        color:#c8c8c8;
-    }
-    .fc-green{
-        color:#1ba36e;
-    }
-    .img-mid{
-        position:absolute;
-        top:50%;
-        left:50%;
-        transform:translate(-50%,-50%);
-    }
-    .parent-mid{
-        display:flex;
-        justify-content:center;
-        align-items:center;
-    }
-
-    .carousel-control .icon{
-        font-size:100px;
-    }
-    .wrap{
-        margin-top:90px;
-    }
-    .wrap .sp{
-
-    }
-    .sp-cell{
-        margin-top:70px;
-        margin-bottom:58px;
-    }
-    .sp-img{
-        position:relative;
-        left:50%;
-        transform:translateX(-50%);
-        height:62px;
-    }
-    .sp-person{
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        height:150px;
-        line-height:25px;
-        border-left:1px #c8c8c8 dashed;
-    }
-    .path-title{
-
-    }
-    .path-row{
-
-    }
-    .path-row .path-cell{
-        margin-top:35px;
-        margin-bottom:29px;
-        padding:0;
-        height:50px;
-    }
-    .path-row .path-circle{
-        width:60px;
-        height:60px;
-        border:1px solid #dfdfdf;
-        border-radius:50%;
-        color:#1db176;
-        margin-left:-10px;
-    }
-    .path-word{
-        line-height:18px;
-        padding-left:4.5%;
-    }
-    .path-icon{
-        left:auto;
-        right:50%;
-        width:22px;
-        transform:translate(30%,-50%);
-    }
-    .path-4{
-        display:none;
-    }
-    .sp-title{
-        margin:20px 0 20px 0;
-    }
-    .sp-row{
-        padding:0;
-        display:flex;
-        justify-content:center;
-    }
-
-    .sp-row .sp-wrap{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        width:130%;
-        padding:20px 30px;
-        margin-right:25px;
-        margin-bottom:20px;
-        border:1px solid #f4f4f4;
-        box-shadow:2px 2px #dedede;
-    }
-    .sp-wrap img{
-        width:90px;
-    }
-    .carousel-sp .carousel-indicators{
-        bottom:-20px;
-        left:49.5%;
-    }
-    .carousel-sp .carousel-indicators li {
-    background-color: rgb(240, 240, 240);
-    }
-    .carousel-sp .carousel-indicators .active {
-    background-color:rgb(41, 176, 120);
-    }
-    .cooperate-title{
-        margin-top:60px;
-    }
-    .cooperate-row{
-
-    }
-    .cooperate-row a{
-        position:relative;
-        width:20%;
-        height:170px;
-        min-width:193px;
-        margin-top:10px;
-        float:left;
-        box-shadow:1px 1px 1px #dbdbdb;
-        background:white;
-    }
-    .cooperate-row a:hover{
-        border: #e5eaea 2px solid;
-        border-radius: 3%;
-        transform: scale(1.1,1.1);
-        z-index: 9;
-    }
-    footer{
-        margin-top:100px;
-    }
-    footer .ui{
-        width:100%;
-        margin-left:3%;
-        padding:0;
-        color:#c8c8c8;
-    }
-    footer .ui li{
-        width:10%;
-        padding:0;
-        float:left;
-        list-style-position:inside;
-    }
-    footer .ui li a{
-        line-height:14px;
-        font-size:14px;
-        display:inline-block;
-        color:#c8c8c8;
-    }
-    footer .ft-wrap{
-        background-color:#1aa36f;
-        color:white;
-    }
-    .ft-wrap a{
-        color:white;
-    }
-    .ft-wrap .col1{
-        margin:35px 0 30px 0;
-        height:100px;
-        padding-left:45px;
-        display:flex;
-        flex-direction:column;
-        justify-content:space-between;
-    }
-    .ft-wrap .col2{
-        margin:35px 0 30px 0;
-        height:100px;
-        display:flex;
-        flex-direction:column;
-        justify-content:flex-end;
-        flex-wrap:wrap;
-
-    }
-    .ft-wrap span{
-        line-height:33px;
-        margin-right:20px;
-    }
-    .ft-wrap .col3 img{
-        margin-top:-7px;
-        width:94px;
-
-    }
-    .col3 .erweima{
-        float:right;
-        margin-top:20px;
-    }
-    footer .ft-bottom{
-        line-height:35px;
-        text-align:center;
-        color:white;
-        border-top:1px solid #2ab983;
-        background-color:#1aa36f;
-
-    }
-    @media (max-width: 768px){
-        .path-cell{
-            margin-left:30px;
-        }
-        .cooperate-row a{
-            width:80%;
-        }
-        footer .link-wrap{
-        display:flex;
-        justify-content:space-around;
-        }
-        footer .link-row{
-            width:50%;
-            float:left;
-        }
-        footer .ui li{
-            width:80%;
-        }
-        .ft-wrap .col1{
-            padding-left:15px;
-        }
-        .ft-wrap .col2{
-            width:50%;
-        }
-        .col3 .erweima{
-            float:left;
-        }
-    }
-    @media (max-width: 992px){
-        .sp-person{
-            border:none;
-        }
-        .path-cell .col-xs-2{
-            position:absolute;
-            width:60%;
-        }
-        .path-icon{
-            top: 45px;
-            transform:rotate(90deg);
-        }
-        .path-row .path-circle{
-            left:50%;
-        }
-        .path-4{
-            display:block;
-        }
-        .path-wrap{
-            padding:0 20px 0 20px;
-        }
-        .cooperate-row{
-        display: flex;
-        flex-wrap: wrap;
-        height: auto;
-        margin-top:10px;
-        justify-content:center;
-        align-content:center;
-        }
-    }
-
-    }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/header+footer.css">
+    <link rel="stylesheet" type="text/css" href="css/首页.css">
 </head>
 <body>
     <header id="header" class="">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row row1">
-                <div class="col-sm-8 col-sm-push-2">
+                <div>
                     <span class="tel-num hidden-xs">咨询电话：010-59478634</span>
                      <div class="img-wrap">
                         <a href=""><img src="header.img/wechat.jpg" alt=""></a>
@@ -337,14 +25,24 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row row2">
-                <div class="col-sm-8 col-sm-push-2">
-                    <img src="header.img/log.jpg" alt="">
-                    <a href="">关于</a>
-                    <a href="">推荐</a>
-                    <a href="">职业</a>
-                    <a href="">首页</a>
+        <div class="nav-wrap">
+            <div class="navbar navbar-default container">
+                <div class="row">
+                    <div class="navbar-header">
+                        <a href="" class="navbar-brand"></a>
+                        <button type="button" class="navbar-btn navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+                            <span class="sr-only">切换导航</span>
+                            <img src="header.img/menu.png">
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="" title="" class="nav-icon">首页</a></li>
+                            <li><a href="" title="" class="nav-icon">职业</a></li>
+                            <li><a href="" title="" class="nav-icon">推荐</a></li>
+                            <li><a href="" title="" class="nav-icon">关于</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
