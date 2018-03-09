@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    color: white;
+    font-size: 62.5%;
+    font-family: SimHei;
+    background-color: #eff0f4;
+}
+header{
+    height: 5em;
+    width: 100%;
+    background-color: #5fc0cd;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header>div{
+    margin: 1em;
+    font-size: 1.8em;
+    letter-spacing:0.1em;
+}
+main{
+}
+input{
+    border: 1px solid white;
+    background:white;
+    padding-left: 6em;
+    height: 3.5em;
+    width: 100%;
+ }
+ input[type="text"]{
+        background: url("images/username.png") no-repeat;/*如果没有就会填满背景*/
+        background-size:58px 52px;
+    }
+    input[type="password"]{
+        background:url("images/secret.png") no-repeat;
+        background-size:58px 52px;
+    }
+    .left,.right{
+        background:white;
+        margin-top: 0.8em;
+        width:100%;
+    }
+.fix1 {
+    position: fixed;
+    left: 60px;
+    top: 145px;
+    width: 1px;
+    height: 30px;
+    background-color: #eaedee;
+}
+.fix2{
+    position:fixed;
+    left: 60px;
+    top:80px;
+    width: 1px;
+    height: 30px;
+    background-color: #eaedee;
+}
+.nav{
+    background-color: #5FC0CD;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+.nav1{
+    letter-spacing:0.8em;
+    font-size: 1.8em;
+}
+.nav2>a{
+    margin: 1em 1em 0 0;
+    text-decoration:none;
+    float: right;
+    font-size: 1.8em;
+}
+a:link{
+    color:#95d2dc;
+}
+a:visited{
+    color:#95d2dc;
+}
+a:hover{
+    color:#95d2dc;
+}
+placeholder{
+        color:#eff0f4;
+    }
+    ::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #eff0f4;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color:    #eff0f4;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color:    #eff0f4;
+    }
