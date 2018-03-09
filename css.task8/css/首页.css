@@ -1,4 +1,10 @@
+        body{
+            font-family:"微软雅黑";
+        }
         h4{
+            font-size:18px;
+        }
+        .fz-18{
             font-size:18px;
         }
         .fz-16{
@@ -14,7 +20,7 @@
             text-align:center;
         }
         .fc-grey{
-            color:#c8c8c8;
+            color:#b5b5b5;
         }
         .fc-green{
             color:#1ba36e;
@@ -43,8 +49,12 @@
         .wrap .sp{
         }
         .sp-cell{
+            padding:0 45px 0 10px;
             margin-top:70px;
             margin-bottom:58px;
+        }
+        .sp-cell h4{
+            margin:30px 0;
         }
         .sp-img{
             position:relative;
@@ -53,13 +63,15 @@
             height:62px;
         }
         .sp-person{
-            display:flex;
-            flex-direction:column;
-            justify-content:center;
-            align-items:center;
-            height:150px;
+            margin-bottom:0;
+            padding-top:58px;
+            padding-left:55px;
+            height:225px;
             line-height:25px;
             border-left:1px #c8c8c8 dashed;
+        }
+        .sp-person span{
+            display:block;
         }
         .path-title{
         }
@@ -77,6 +89,7 @@
             border:1px solid #dfdfdf;
             border-radius:50%;
             color:#1db176;
+            font-size:18px;
             background:white;
             margin-left:-10px;
         }
@@ -113,8 +126,8 @@
             background:white;
         }
         .sp-wrap p{
-            line-height:20px;
-            padding:0 10px;
+            line-height:24px;
+            padding:0 0 0 10px;
         }
         .sp-wrap img{
             width:107px;
@@ -122,10 +135,11 @@
         }
         .sp-wrap h4{
             margin-bottom:20px;
+            font-weight:bold;
         }
         .carousel-sp .carousel-indicators{
             bottom:-20px;
-            left:49.5%;
+            left:48.35%;
         }
         .carousel-sp .carousel-indicators li {
         background-color: rgb(240, 240, 240);
@@ -169,10 +183,21 @@
             .cooperate-row a{
                 width:80%;
             }
+            .sp-row .sp-wrap{
+                margin-right:20px;
+                margin-left:20px;
+            }
         }
         @media (max-width: 992px){
             .sp-person{
                 border:none;
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                align-items:center;
+            }
+            .sp-cell p{
+            text-align:center;
             }
             .path-cell .col-xs-2{
                 position:absolute;
