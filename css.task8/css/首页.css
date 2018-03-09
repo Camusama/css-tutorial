@@ -188,6 +188,11 @@
                 margin-left:20px;
             }
         }
+        @media (max-width: 1200px){
+            .sp-person{
+                padding-top:38px;
+            }
+        }
         @media (max-width: 992px){
             .sp-person{
                 border:none;
@@ -195,6 +200,12 @@
                 flex-direction:column;
                 justify-content:center;
                 align-items:center;
+                padding:0 15px 0 15px;
+                margin-top:0px;
+                margin-bottom:70px;
+            }
+            .sp-cell{
+                padding:0 15px 0 15px;
             }
             .sp-cell p{
             text-align:center;
