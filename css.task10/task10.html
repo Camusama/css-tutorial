@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title></title>
+    <link rel="stylesheet" href="css/task10.css">
+    <style type="text/css" media="screen">
+        select {
+            border: solid 1px #e8e8e8;
+            appearance:none;
+            -moz-appearance:none;
+            -webkit-appearance:none;
+            padding:0 54px 0 18px;
+            background: url(images/triangle.png) no-repeat scroll 98px center transparent;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="tel-num">
+                    客服热线：010-594-78634
+                </div>
+                <div class="head-btn-wrap">
+                    <a href="" title="" class="head-btn hbtn1">登录</a>
+                    <a href="" title="" class="head-btn hbtn2">注册</a>
+                </div>
+            </div>
+        </div>
+    </header><!-- /header -->
+    <div class="head-nav-wrap">
+        <nav class="navbar navbar-default container head-nav" role="navigation" style="border:none;">
+            <div class="row">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" class="nav-btn">首页</a></li>
+                    <li><a href="#" class="nav-btn">在线定制</a></li>
+                    <li><a href="" title="" class="nav-btn">标准箱</a></li>
+                    <li><a href="" title="" class="nav-btn">品质保障</a></li>
+
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row path-row">
+            <div class="path-cell">
+                <div class="path-circle bg-grey">
+                4
+                </div>
+                <div class="path-line bg-grey">
+                </div>
+                <div class="path-word fc-grey">
+                    4.确认下单
+                </div>
+            </div>
+            <div class="path-cell">
+                <div class="path-circle bg-grey">
+                3
+                </div>
+                <div class="path-line bg-grey">
+                </div>
+                <div class="path-word fc-grey">
+                    3.上传附件
+                </div>
+            </div>
+            <div class="path-cell">
+                <div class="path-circle bg-grey">
+                2
+                </div>
+                <div class="path-line bg-grey">
+                </div>
+                <div class="path-word fc-grey">
+                    2.选择数量
+                </div>
+            </div>
+            <div class="path-cell">
+                <div class="path-circle bg-orange">
+                1
+                </div>
+                <div class="path-line bg-orange">
+                </div>
+                <div class="path-word fc-orange">
+                    1.定制纸箱
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="select-title">
+                <div class="col-line">
+                </div>
+                请按照以下步骤来定制您的纸箱
+            </div>
+        </div>
+        <div class="row select-wrap">
+            <div class="slct-title">
+                <img src="images/box.png">
+                选择箱型
+            </div>
+            <div class="slct-shp">
+                <input type="radio" name="box-shape" id="box-shp1" class="dp-no1">
+                <label for="box-shp1" class="slct-cell">&nbsp;&nbsp;&nbsp;&nbsp;对口箱</label>
+                <input type="radio"  name="box-shape" id="box-shp2" class="dp-no">
+                <label for="box-shp2" class="slct-cell">&nbsp;&nbsp;&nbsp;&nbsp;飞机盒</label>
+                <input type="radio"  name="box-shape" id="box-shp3" class="dp-no">
+                <label for="box-shp3" class="slct-cell">&nbsp;&nbsp;&nbsp;&nbsp;天地盖</label>
+                <select class="box-slct box-slct1">
+                    <option value="" disabled selected class="hidden">查看详情</option>
+                    <option value ="1">1</option>
+                    <option value ="2">2</option>
+                    <option value ="3">3</option>
+                </select>
+            </div>
+            <div class="slct-title">
+                <img src="images/Ruler.png">
+                选择箱型
+            </div>
+            <div class="slct-size">
+                <div class="box-size-wrap" style="margin-bottom:20px;">
+                    <input type="radio" name="box-size" id="box-size1" class="dp-no1">
+                    <label for="box-size1" class="slct-cell">&nbsp;&nbsp;&nbsp;&nbsp;外径</label>
+                    <span class="size-div">长&nbsp;</span><input type="text" class="size-input">&nbsp;mm
+                    <span class="size-div">宽&nbsp;</span><input type="text" class="size-input">&nbsp;mm
+                    <span class="size-div">高&nbsp;</span><input type="text" class="size-input">&nbsp;mm
+                </div>
+                <div class="box-size-wrap">
+                    <input type="radio" name="box-size" id="box-size2" class="dp-no1">
+                    <label for="box-size2" class="slct-cell">&nbsp;&nbsp;&nbsp;&nbsp;内径</label>
+                    <span class="size-div">长&nbsp;</span><input type="text" class="size-input">&nbsp;mm
+                    <span class="size-div">宽&nbsp;</span><input type="text" class="size-input">&nbsp;mm
+                    <span class="size-div">高&nbsp;</span><input type="text" class="size-input">&nbsp;mm
+                </div>
+                <select class="box-slct box-slct2">
+                    <option value="" disabled selected class="hidden">查看详情</option>
+                    <option value ="1">1</option>
+                    <option value ="2">2</option>
+                    <option value ="3">3</option>
+                </select>
+            </div>
+            <div class="slct-title">
+                <img src="images/Scissors.png">
+                选择材质
+            </div>
+            <div class="slct-quality">
+                <input type="radio" name="box-quality" id="box-qt1" class="dp-no1">
+                <label for="box-qt1" class="slct-cell quality-div">&nbsp;&nbsp;&nbsp;&nbsp;三层A瓦优质</label>
+                <input type="radio"  name="box-quality" id="box-qt2" class="dp-no1">
+                <label for="box-qt2" class="slct-cell quality-div">&nbsp;&nbsp;&nbsp;&nbsp;三层A瓦优质</label>
+                <input type="radio"  name="box-quality" id="box-qt3" class="dp-no1">
+                <label for="box-qt3" class="slct-cell quality-div">&nbsp;&nbsp;&nbsp;&nbsp;三层A瓦优质</label>
+                <input type="radio"  name="box-quality" id="box-qt4" class="dp-no1">
+                <label for="box-qt4" class="slct-cell quality-div">&nbsp;&nbsp;&nbsp;&nbsp;三层A瓦优质</label>
+                <input type="radio"  name="box-quality" id="box-qt5" class="dp-no1">
+                <label for="box-qt5" class="slct-cell quality-div">&nbsp;&nbsp;&nbsp;&nbsp;三层A瓦优质</label>
+                <select class="box-slct box-slct3">
+                    <option value="" disabled selected class="hidden">查看详情</option>
+                    <option value ="1">1</option>
+                    <option value ="2">2</option>
+                    <option value ="3">3</option>
+                </select>
+            </div>
+            <div class="nxt-btn-box">
+                <a href="" title="" class="nxt-btn">下一步</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col1">
+                    <span class="fs-18">51包装网— 纸箱包装首选服务平台</span>
+                </div>
+                <div class="col-md-4 col-sm-12 col2">
+                    <div>
+                        <a href="" title="">关于我们</a>
+                        <a href="" title="">配送流程</a>
+                        <a href="" title="">联系我们</a>
+                    </div>
+                    <div style="margin-top:30px">
+                        <a href="" title="">下单指南</a>
+                        <a href="" title="">媒体介绍</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col3">
+                    <div class="flot-rt erweima">
+                        <img src="images/二维码.jpg">
+                    </div>
+                    <div class="info-wrap flot-rt">
+                        <div class="info-line">
+                            TEL:400-0000-000
+                        </div>
+                        <div class="info-line">
+                            企业QQ：123456789
+                        </div>
+                        <div class="info-line">
+                            微信号：XXXXXXX
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ft-bottom">
+            北京五一包装科技有限公司Copyright@2015&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;51baozhuang.com.015&nbsp;&nbsp;&nbsp;&nbsp;  All right reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 京icp备99999999-1
+        </div>
+    </footer>
+</body>
+</html>
