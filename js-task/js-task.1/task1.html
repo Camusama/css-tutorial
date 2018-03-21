@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= device-width, initial-scale= 1">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style type="text/css" media="screen">
+        .content{
+            margin-right:auto;
+            margin-left:auto;
+            width:80%;
+        }
+        .box{
+            float:left;
+            width:30%;
+            height:30%;
+            background-color:orange;
+            border-radius:4%;
+            padding-bottom:30%;
+            margin:0 2% 2% 0;
+        }
+        .btn{
+            float:left;
+            margin-bottom:10px;
+            text-align:center;
+            width:93%;
+            line-height:40px;
+            background-color:white;
+            color:orange;
+            text-decoration:none;
+            border-radius:10px;
+            border: orange solid 2px;
+        }
+        .btn:hover{
+            color:white;
+            background-color:orange;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="content">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <a class="btn" id="btn1">开始</a>
+        <a class="btn" id="btn2">结束</a>
+    </div>
+
+
+    <script>
+        var box =document.getElementsByClassName("box");
+        var btn1=document.getElementById("btn1");
+        var btn2=document.getElementById("btn2");
+        function resetcolor(){
+            for(var i=0;i<box.length;i++){
+                box[i].style.backgroundColor ="orange";
+            }
+        }
+        function getRandomColor() {
+            return 'rgb('+Math.round(Math.random()*255)+','+Math.round(Math.random()*255)+','+Math.round(Math.random()*255)+')';
+        }
+        function start() {
+            resetcolor();
+            var temp = [];
+            while (temp.length < 3) {
+                shuffle = Math.floor(Math.random() * box.length);
+                console.log(shuffle);//计数
+                if (temp.indexOf(shuffle) < 0) {//temp中shuffle不存在
+                    box[shuffle].style.backgroundColor = getRandomColor();
+                    temp.push(shuffle);
+                }
+            }
+        }//执行一次，同时三个换色，多次执行
+        var int;
+        btn1.onclick= function(){
+            clearInterval(int);
+            int= setInterval("start()",1000);
+        }
+        btn2.onclick=function(){
+            clearInterval(int);
+            resetcolor();
+        }
+    </script>
+</body>
+</html>
