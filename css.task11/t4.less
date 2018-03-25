@@ -26,13 +26,16 @@ a{
     }
 @blue : #5fc0cd;
 
+.flexpt(@justcont,@alitem){
+    display:flex;
+    justify-content:@justcont;
+    align-items:@alitem;
+}
 header{
     height: 5em;
     width: 100%;
     background-color:@blue;
-    display: flex ;
-    justify-content: space-between;
-    align-items: center;
+    .flexpt(space-between,center);
     @fs-h:1.8em;
     @le-spc:.1em;
     div{
@@ -74,9 +77,7 @@ footer{
     @bluesky:#95d2dc;
     @fz:1.8em;
     .nav{
-        display:flex;
-        justify-content:center;
-        align-items:center;
+        .flexpt(center,center);
         margin-top:1em;
         background:@blue;
         height:5em;
@@ -85,6 +86,7 @@ footer{
     .nav1{
         letter-spacing:.8em;
         font-size:@fz;
+        transform: translateX(14%);
     }
     .nav2{
         a{
@@ -92,6 +94,15 @@ footer{
             text-align: none;
             float: right;
             font-size:@fz;
+            &:link{
+                color:#95d2dc;
+            }
+            &:visited{
+                color:#95d2dc;
+            }
+            &:hover{
+                color:#95d2dc;
+            }
         }
     }
 }

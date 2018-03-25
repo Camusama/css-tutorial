@@ -32,7 +32,7 @@ header {
   height: 5em;
   width: 100%;
   background-color: #5fc0cd;
-  display: flex ;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -77,10 +77,20 @@ footer .nav {
 footer .nav1 {
   letter-spacing: .8em;
   font-size: 1.8em;
+  transform: translateX(14%);
 }
 footer .nav2 a {
   margin: 1em 1em 0 0 ;
   text-align: none;
   float: right;
   font-size: 1.8em;
+}
+footer .nav2 a:link {
+  color: #95d2dc;
+}
+footer .nav2 a:visited {
+  color: #95d2dc;
+}
+footer .nav2 a:hover {
+  color: #95d2dc;
 }
