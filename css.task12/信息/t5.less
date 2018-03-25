@@ -1,0 +1,195 @@
+html{
+    font-size: 625%;
+    padding: 0;
+    margin: 0;
+}
+.transx(@x){
+    transform: translateX(@x);
+}
+.transy(@y){
+    transform: translateY(@y);
+}
+@blue:#5fc0cd;
+@white:white;
+.flxpos(@alitem:stretch,@justcont:flex-start){
+    display: flex;
+    align-items: @alitem;
+    justify-content: @justcont;
+}
+.fs(@fs){
+    font-size:@fs;
+}
+.tdn{
+    text-decoration: none;
+}
+.fr{
+    float: left;
+}
+.cw{
+    color:white;
+}
+.overh{
+    overflow:hidden;
+}
+.bgw{
+    background:white;
+}
+.bdr(@r){
+    border-radius:@r;
+}
+.lh(@lh){
+    line-height: @lh;
+}
+.redword{
+    color:red;
+}
+header{
+    position: fixed;
+    .flxpos(center,space-between);
+    left:0;
+    right: 0;
+    top: 0;
+    height: .45rem;
+    background: @blue;
+    .fs(.16rem);
+    .cw;
+    a{
+        .fr;
+        .tdn;
+        .cw;
+        margin-left: 10px;
+    }
+    h1{
+        padding:0;
+        .fs(.16rem);
+        .transx(-10px);
+    }
+
+}
+main{
+    position:absolute;
+    top:.45rem;
+    left:0;
+    right:0;
+    bottom: .7rem;
+    .overh;
+    .content{
+        .fs(.12rem);
+        .user-section{
+            position:relative;
+            width: 100%;
+            height:1.7rem;
+            .flxpos(center);
+            background:url("images/background.jpg") center;
+            background-size:cover;
+            .cw;
+            .selfie{
+                position:relative;
+                left:.2rem;
+                width:.75rem;
+                height:.75rem;
+                .bgw;
+                .bdr(50%);
+                .overh;
+                img{
+                    width:100%;
+                }
+            }
+            .selfie-info{
+                position:relative;
+                margin:0 0 0 .5rem;
+                background-size: .12rem;
+                .selfie-info-name{
+                    .fs(.16rem);
+                    margin:0;
+                }
+                .selfie-info-position{
+                    .fs(.12rem);
+                    margin:.08rem 0;
+                    padding:0 0 0 .2rem;
+                    background:url("images/position.png") no-repeat left center;
+                    background-size:.12rem;
+                }
+            }
+        }
+    }
+    .plateform{
+        ul,li,ol{
+            list-style: none;
+        }
+        p{
+            margin:0;
+        }
+        .plateform-title{
+            .flxpos(center);
+            height:.48rem;
+            border-bottom: 1px solid #ccc;
+            div{
+                margin-left:.09rem;
+                padding-left: .08rem;
+                border-left: 4px solid @blue;
+                .fs(.13rem);
+            }
+        }
+        .plateform-list{
+            padding:0 .1rem;
+            margin:0;
+            li{
+                position:relative;
+                margin:0;
+                padding:.15rem .1rem;
+                .lh(.2rem);
+                border-bottom:1px solid #ccc;
+                .fs(.12rem);
+                .startag{
+                    display:inline-block;
+                    padding-left:.15rem;
+                    margin-right:.15rem;
+                    .fs(.12rem);
+                    background:url("images/star.png") no-repeat left center;
+                    background-size:.12rem;
+                }
+                .listtitle{
+                    position:absolute;
+                    top:50%;
+                    width: 5em;
+                    .transy(-50%);
+                    border-right: 1px solid #ccc;
+                    color:#aaa;
+                }
+                .message{
+                    margin-left:6em;
+                }
+            }
+        }
+    }
+}
+footer{
+        position: fixed;
+        .flxpos(center,space-between);
+        left:0;
+        right:0;
+        bottom:0;
+        padding:.08rem;
+        height:.45rem;
+        .bgw;
+        button{
+            width: 49%;
+            height:.44rem;
+            .fs(.16rem);
+            .bdr(4px);
+            outline: none;
+            cursor: pointer;
+        }
+        .button-left{
+            border:2px solid @blue;
+            color:@blue;
+            .bgw;
+        }
+        .button-right{
+            border:none;
+            color:white;
+            background:@blue;
+        }
+    }
+

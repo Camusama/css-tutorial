@@ -47,6 +47,9 @@ header{
 main{
     @white:white;
     @bgsz:58px 52px;
+    .bgsz{
+        background-size:58px 52px;
+    }
     .input{
         padding-left: 6em;
         height:3.5em;
@@ -58,7 +61,7 @@ main{
     }
     input[type="text"]{
         background: url('images/username.png') no-repeat;
-        background-size: @bgsz;
+        .bgsz;
     }
     input[type="password"]{
         background:url('images/secret.png') no-repeat;

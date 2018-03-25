@@ -1,0 +1,179 @@
+html {
+  font-size: 625%;
+  padding: 0;
+  margin: 0;
+}
+.tdn {
+  text-decoration: none;
+}
+.fr {
+  float: left;
+}
+.cw {
+  color: white;
+}
+.overh {
+  overflow: hidden;
+}
+.bgw {
+  background: white;
+}
+.redword {
+  color: red;
+}
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: .45rem;
+  background: #5fc0cd;
+  font-size: 0.16rem;
+  color: white;
+}
+header a {
+  float: left;
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+}
+header h1 {
+  padding: 0;
+  font-size: 0.16rem;
+  transform: translateX(-10px);
+}
+main {
+  position: absolute;
+  top: .45rem;
+  left: 0;
+  right: 0;
+  bottom: .7rem;
+  overflow: hidden;
+}
+main .content {
+  font-size: 0.12rem;
+}
+main .content .user-section {
+  position: relative;
+  width: 100%;
+  height: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: url("images/background.jpg") center;
+  background-size: cover;
+  color: white;
+}
+main .content .user-section .selfie {
+  position: relative;
+  left: .2rem;
+  width: .75rem;
+  height: .75rem;
+  background: white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+main .content .user-section .selfie img {
+  width: 100%;
+}
+main .content .user-section .selfie-info {
+  position: relative;
+  margin: 0 0 0 .5rem;
+  background-size: .12rem;
+}
+main .content .user-section .selfie-info .selfie-info-name {
+  font-size: 0.16rem;
+  margin: 0;
+}
+main .content .user-section .selfie-info .selfie-info-position {
+  font-size: 0.12rem;
+  margin: .08rem 0;
+  padding: 0 0 0 .2rem;
+  background: url("images/position.png") no-repeat left center;
+  background-size: .12rem;
+}
+main .plateform ul,
+main .plateform li,
+main .plateform ol {
+  list-style: none;
+}
+main .plateform p {
+  margin: 0;
+}
+main .plateform .plateform-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: .48rem;
+  border-bottom: 1px solid #ccc;
+}
+main .plateform .plateform-title div {
+  margin-left: .09rem;
+  padding-left: .08rem;
+  border-left: 4px solid #5fc0cd;
+  font-size: 0.13rem;
+}
+main .plateform .plateform-list {
+  padding: 0 .1rem;
+  margin: 0;
+}
+main .plateform .plateform-list li {
+  position: relative;
+  margin: 0;
+  padding: .15rem .1rem;
+  line-height: 0.2rem;
+  border-bottom: 1px solid #ccc;
+  font-size: 0.12rem;
+}
+main .plateform .plateform-list li .startag {
+  display: inline-block;
+  padding-left: .15rem;
+  margin-right: .15rem;
+  font-size: 0.12rem;
+  background: url("images/star.png") no-repeat left center;
+  background-size: .12rem;
+}
+main .plateform .plateform-list li .listtitle {
+  position: absolute;
+  top: 50%;
+  width: 5em;
+  transform: translateY(-50%);
+  border-right: 1px solid #ccc;
+  color: #aaa;
+}
+main .plateform .plateform-list li .message {
+  margin-left: 6em;
+}
+footer {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: .08rem;
+  height: .45rem;
+  background: white;
+}
+footer button {
+  width: 49%;
+  height: .44rem;
+  font-size: 0.16rem;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+footer .button-left {
+  border: 2px solid #5fc0cd;
+  color: #5fc0cd;
+  background: white;
+}
+footer .button-right {
+  border: none;
+  color: white;
+  background: #5fc0cd;
+}
