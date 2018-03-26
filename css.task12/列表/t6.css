@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+html {
+  font-size: 62.5%;
+}
+.bgw {
+  background: white;
+}
+.fr {
+  float: right;
+}
+.fs15 {
+  font-size: 1.5rem;
+}
+.fs12 {
+  font-size: 1.2rem;
+}
+.fs125 {
+  font-size: 1.25rem;
+}
+.sp {
+  width: 4rem;
+  height: 3.5rem;
+  background: url('sp.png') no-repeat;
+  margin: 0 auto;
+}
+header,
+footer {
+  height: 15vh;
+  z-index: 2;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  width: 100%;
+  font-size: 1.5rem;
+  background: white;
+}
+header .container {
+  margin: 0 0;
+  width: 100%;
+}
+header .container .row1 {
+  background-color: #5fc0cd;
+}
+header .container .row1 .nav-pills > li {
+  width: 50%;
+}
+header .container .row1 .nav-pills > li > a {
+  padding: .4rem .3rem;
+  margin: 1.1rem 0;
+  text-align: center;
+  white-space: nowrap;
+  color: white;
+  background-color: #55a8b3;
+}
+header .container .row1 .nav-pills > li.active > a {
+  color: #5fc0cd;
+  background: white;
+}
+header .container .row1 .nav-pills > li + li {
+  margin-left: -6px;
+}
+header .container .row1 .sp-header {
+  float: right;
+  width: 2rem;
+  height: 4.5rem;
+  margin: .5rem 1rem 0 0;
+  background-position: -6.2rem 1.3rem;
+  background-size: auto 2rem;
+}
+header .container .row2 {
+  height: 4rem;
+  color: #afbac0;
+  border-bottom: 1px solid #afbac0;
+}
+header .container .row2 ul,
+header .container .row2 li {
+  margin: 0 0;
+  padding: .25rem 0;
+  list-style: none;
+  text-align: center;
+}
+header .container .row2 ul > li > button {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.5rem;
+  background: white;
+  color: #afbac0;
+  border-right: 1px solid #afbac0;
+}
+header .container .row2 .caret {
+  position: absolute;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  margin-top: .9rem;
+  right: .4rem;
+}
+header .container .row2 > ul > li {
+  padding-right: 0;
+  padding-left: 5px;
+}
+header .container .row2 > ul > li .dropdown-menu {
+  width: 80%;
+  min-width: 0;
+  margin-left: 10%;
+  font-size: 1.5rem;
+}
+header .container .row2 .btn.focus,
+header .container .row2 .btn:focus,
+header .container .row2 .btn:hover {
+  color: #afbac0;
+  outline: none;
+  box-shadow: none;
+  text-decoration: underline;
+}
+main {
+  position: absolute;
+  top: 9.4rem;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  padding-bottom: 5rem;
+  font-size: 1.25rem;
+}
+main .container-fluid {
+  padding: 0;
+}
+main .list-group .splg {
+  position: relative;
+  display: inline-block;
+  font-size: 100%;
+  background: url(sp.png) no-repeat;
+  background-size: 13rem;
+  width: 1.2rem;
+  height: 1.3rem;
+}
+main .list-group .splg-date {
+  background-position: -148px 0px;
+  bottom: -4px;
+}
+main .list-group .splg-position {
+  background-position: -134px 0px;
+  bottom: -6px;
+}
+main .list-group .red {
+  position: absolute;
+  top: auto;
+  left: auto;
+  right: 2rem;
+  bottom: auto;
+  display: inline-block;
+  white-space: nowrap;
+  color: red;
+}
+main .list-group h3 {
+  color: black;
+}
+main .list-group .dateline {
+  display: inline-block;
+  white-space: nowrap;
+}
+main .list-group .list-group-item {
+  text-align: left;
+  padding: 6px 0 6px 30px;
+  margin: 0;
+}
+main .list-group span {
+  color: #afbac0;
+}
+main .list-group .arrow::after {
+  float: right;
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.5rem;
+  content: '';
+  margin: 0 .5rem;
+  background: url("sp.png") no-repeat;
+  background-size: 12rem;
+  background-position: 0 2px;
+}
+footer {
+  position: fixed;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 5rem;
+  background: white;
+  font-size: 1.2rem;
+}
+footer .sp-1 {
+  background-position: -1.7rem 0.6rem;
+  background-size: auto 2.8rem;
+}
+footer .sp-3 {
+  background-position: -11.1rem 0.6rem;
+  background-size: auto 2.8rem;
+}
+footer .sp-2 {
+  height: 4.5rem;
+  width: 4.5rem;
+  margin: auto;
+  margin-top: 0.5vh;
+  border-radius: 50%;
+  background-color: #5fc0cd;
+  background-position: -5.7rem 0.8rem;
+  background-size: auto 3.2rem;
+}
+footer > .container-fluid > .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+footer > .container-fluid > .row > div {
+  text-align: center;
+}
+footer .cyan {
+  color: #5fc0cd;
+}
+footer .grey {
+  color: #afbac0;
+}
