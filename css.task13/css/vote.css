@@ -1,0 +1,202 @@
+/*
+
+           公用颜色
+
+                               */
+/*
+
+             变量
+
+                               */
+.menu {
+  display: inline-block;
+  padding: 5px 0;
+  width: 20px;
+  height: 2.4px;
+  background-color: #fff;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  background-clip: content-box;
+}
+.arrow-right {
+  width: 1em;
+  height: 1em;
+  background-color: transparent;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  border-color: #fff;
+  transform: rotateZ(-45deg);
+}
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-width: 10px 0 10px 15px;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+}
+.triangle-bottom {
+  width: 0;
+  height: 0;
+  border-width: 8px 3px 0 3px;
+  border-style: solid;
+  border-color: #b9e9f5 transparent transparent transparent;
+}
+/*
+
+           header style
+
+                                 */
+header .icon-menu {
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  padding: 5px 0;
+  width: 20px;
+  height: 2.4px;
+  background-color: #fff;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  background-clip: content-box;
+}
+header .icon-close {
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .icon-close:before {
+  content: "\2716";
+  font-size: 2rem;
+  color: #fff;
+}
+/*
+
+           main style
+
+                                 */
+main {
+  background-color: #29bde0;
+}
+main .play-bar {
+  position: relative;
+  margin: 0 -5.5%;
+  height: 8vh;
+  line-height: 8vh;
+  background-color: #b9e9f5;
+}
+main .play-bar p {
+  margin-left: 8%;
+  font-size: 1.5rem;
+}
+main .play-bar .icon-play {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1%;
+  width: 30px;
+  height: 30px;
+  background-color: #fbb435;
+  border-radius: 100%;
+}
+main .play-bar .icon-play span {
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  left: 2px;
+  width: 0;
+  height: 0;
+  border-width: 10px 0 10px 15px;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+}
+@media screen and (min-width: 768px) {
+  main .play-bar .icon-play {
+    right: 2%;
+  }
+}
+main .play-bar .icon-triangle {
+  position: absolute;
+  top: 8vh;
+  left: 13%;
+  width: 0;
+  height: 0;
+  border-width: 8px 3px 0 3px;
+  border-style: solid;
+  border-color: #b9e9f5 transparent transparent transparent;
+}
+main .vote {
+  padding-top: 5%;
+}
+main .vote .point {
+  margin: 0 0 7% 8%;
+  font-size: 1.3rem;
+  color: #fff;
+}
+main .vote .people {
+  display: inline-block;
+  margin-left: 2%;
+  width: 30%;
+  text-align: center;
+}
+main .vote .people button {
+  padding: 0;
+  width: 80px;
+  background-color: #f5c97b;
+  border: 2px solid #fff;
+}
+main .vote .people button .name {
+  margin: 30% 0;
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+main .vote .people button .number {
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #83b09a;
+}
+main .vote .people:hover .select {
+  visibility: visible;
+}
+main .vote .people .select {
+  visibility: hidden;
+  margin: 15% 0;
+}
+main .vote .people .select button {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: none;
+  background: url(../images/sprite.png) center no-repeat #fff;
+}
+main .vote .people .select .icon1 {
+  background-position: 0 0;
+}
+main .vote .people .select .icon2 {
+  background-position: -18px 0;
+}
+main .vote .people .select .icon3 {
+  background-position: -36px 0;
+}
+main .vote .people .select .icon4 {
+  background-position: -54px 0;
+}
+/*
+
+           footer style
+
+                                 */
+footer button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2% 25%;
+  background-color: #fbb435;
+}
+footer button a {
+  font-size: 2rem;
+  color: #fff;
+  white-space: nowrap;
+}

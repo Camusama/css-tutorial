@@ -1,0 +1,200 @@
+/*
+
+           公用颜色
+
+                               */
+/*
+
+             变量
+
+                               */
+.menu {
+  display: inline-block;
+  padding: 5px 0;
+  width: 20px;
+  height: 2.4px;
+  background-color: #fff;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  background-clip: content-box;
+}
+.arrow-right {
+  width: 1em;
+  height: 1em;
+  background-color: transparent;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  border-color: #fff;
+  transform: rotateZ(-45deg);
+}
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-width: 10px 0 10px 15px;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+}
+.triangle-bottom {
+  width: 0;
+  height: 0;
+  border-width: 8px 3px 0 3px;
+  border-style: solid;
+  border-color: #b9e9f5 transparent transparent transparent;
+}
+/*
+
+           header style
+
+                                 */
+header {
+  border-bottom: 1px solid #74d4eb;
+}
+header .icon-home {
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .icon-home img {
+  width: 35px;
+  height: 30px;
+}
+header .icon-info {
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .icon-info img {
+  width: 30px;
+  height: 30px;
+}
+/*
+
+           main style
+
+                                 */
+main {
+  background-color: #29bde0;
+}
+main .winner {
+  padding: 5%;
+  text-align: center;
+}
+main .winner img {
+  width: 250px;
+  height: 150px;
+}
+main .winner p {
+  margin: 5% 0;
+  font-size: 2rem;
+  color: #ffc865;
+  line-height: 1.5em;
+  text-align: justify;
+}
+main .game-ending {
+  padding: 0 5%;
+}
+main .game-ending p {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 300;
+}
+main .game-ending .people {
+  position: relative;
+  margin: 2% 0;
+  text-align: center;
+}
+main .game-ending .people p {
+  display: inline-block;
+}
+main .game-ending .people .killer,
+main .game-ending .people .sniper {
+  position: absolute;
+  left: 0;
+}
+main .game-ending .people .civy {
+  position: absolute;
+  right: 0;
+}
+main .game-ending .word {
+  margin-bottom: 5%;
+}
+main .game-ending .word p {
+  margin: 2% 0;
+}
+main .game-step {
+  margin: 0 -6% 0 -5.5%;
+  background-color: #fff;
+  overflow: hidden;
+}
+main .game-step .day-one {
+  padding: 2% 10% 5% 10%;
+  border-bottom: 1px solid #d5d5d5;
+}
+main .game-step .day-one h2 {
+  position: relative;
+  margin: 0 0 5% 0;
+  font-size: 2rem;
+  font-weight: 400;
+}
+main .game-step .day-one h2 span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 1.3rem;
+  color: #d5d5d5;
+}
+main .game-step .day-one p {
+  margin: 3% 0;
+  font-size: 1.5rem;
+  color: #bcbcbc;
+}
+main .game-step .day-two {
+  padding: 2% 10% 5% 10%;
+  border-bottom: 1px solid #d5d5d5;
+}
+main .game-step .day-two h2 {
+  position: relative;
+  margin: 0 0 5% 0;
+  font-size: 2rem;
+  font-weight: 400;
+}
+main .game-step .day-two h2 span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 1.3rem;
+  color: #d5d5d5;
+}
+main .game-step .day-two p {
+  margin: 3% 0;
+  font-size: 1.5rem;
+  color: #bcbcbc;
+}
+/*
+
+           footer style
+
+                                 */
+footer {
+  display: flex;
+  background-color: rgba(153, 223, 240, 0.7);
+}
+footer button {
+  flex: 1;
+  margin: 3% 5%;
+}
+footer button a {
+  padding: 3% 5%;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 300;
+  white-space: nowrap;
+}
+footer .again {
+  background-color: #f66f6f;
+}
+footer .share {
+  background-color: #fbb435;
+}

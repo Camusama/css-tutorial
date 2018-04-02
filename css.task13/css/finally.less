@@ -1,0 +1,276 @@
+/*
+
+           公用颜色
+
+                               */
+
+@color: #9a9a9a;
+@bg-color: #29bde0;
+
+/*
+
+             变量
+
+                               */
+
+.float(l) {
+	float: left;
+}
+
+.float (r) {
+	float: right;
+}
+
+.post(r) {
+	position: relative;
+}
+
+.post(a) {
+	position: absolute;
+}
+
+.post(f) {
+	position: fixed;
+}
+
+.trans(x) {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.trans(y) {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.trans(xy) {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.menu {
+	display: inline-block;
+	padding: 5px 0;
+	width: 20px;
+	height: 2.4px;
+	background-color: #fff;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	background-clip: content-box;
+}
+
+.arrow-right {
+	width: 1em;
+	height: 1em;
+	background-color: transparent;
+	border-width: 0 2px 2px 0;
+	border-style: solid;
+	border-color: #fff;
+	transform: rotateZ(-45deg);
+}
+
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-width: 10px 0 10px 15px;
+	border-style: solid;
+	border-color: transparent transparent transparent #fff;
+}
+
+.triangle-bottom {
+	width: 0;
+	height: 0;
+	border-width: 8px 3px 0 3px;
+	border-style: solid;
+	border-color: #b9e9f5 transparent transparent transparent;
+}
+
+/*
+
+           header style
+
+                                 */
+
+header {
+	border-bottom: 1px solid #74d4eb;
+
+	.icon-home {
+		.post(a);
+		left: 3%;
+		.trans(y);
+
+		img {
+			width: 35px;
+			height: 30px;
+		}
+	}
+
+	.icon-info {
+		.post(a);
+		right: 3%;
+		.trans(y);
+
+		img {
+			width: 30px;
+			height: 30px;
+		}
+	}
+}
+
+/*
+
+           main style
+
+                                 */
+
+main {
+	background-color: @bg-color;
+
+	.winner {
+		padding: 5%;
+		text-align: center;
+
+		img {
+			width: 250px;
+			height: 150px;
+		}
+
+		p {
+			margin: 5% 0;
+			font-size: 2rem;
+			color: #ffc865;
+			line-height: 1.5em;
+			text-align: justify;
+		}
+	}
+
+	.game-ending {
+		padding: 0 5%;
+
+		p {
+			font-size: 1.5rem;
+			color: #fff;
+			font-weight: 300;
+		}
+
+		.people {
+			.post(r);
+			margin: 2% 0;
+			text-align: center;
+
+			p {
+				display: inline-block;
+			}
+
+			.killer,
+			.sniper {
+				.post(a);
+				left: 0;
+			}
+
+			.civy {
+				.post(a);
+				right: 0;
+			}
+		}
+
+		.word {
+		    margin-bottom: 5%;
+
+		    p {
+			    margin: 2% 0;
+		    }
+	    }
+	}
+
+	.game-step {
+		margin: 0 -6% 0 -5.5%;
+		background-color: #fff;
+		overflow: hidden;
+
+		.day-one {
+			padding: 2% 10% 5% 10%;
+			border-bottom: 1px solid #d5d5d5;
+
+			h2 {
+				.post(r);
+				margin: 0 0 5% 0;
+				font-size: 2rem;
+				font-weight: 400;
+
+				span {
+				    .post(a);
+				    right: 0;
+				    bottom: 0;
+				    font-size: 1.3rem;
+				    color: #d5d5d5;
+			    }
+			}
+
+			p {
+				margin: 3% 0;
+				font-size: 1.5rem;
+				color: #bcbcbc;
+			}
+		}
+
+		.day-two {
+			padding: 2% 10% 5% 10%;
+			border-bottom: 1px solid #d5d5d5;
+
+			h2 {
+				.post(r);
+				margin: 0 0 5% 0;
+				font-size: 2rem;
+				font-weight: 400;
+
+				span {
+				    .post(a);
+				    right: 0;
+				    bottom: 0;
+				    font-size: 1.3rem;
+				    color: #d5d5d5;
+			    }
+			}
+
+			p {
+				margin: 3% 0;
+				font-size: 1.5rem;
+				color: #bcbcbc;
+			}
+		}
+	}
+}
+
+/*
+
+           footer style
+
+                                 */
+
+footer {
+	display: flex;
+	background-color: rgba(153, 223, 240, 0.7);
+
+	button {
+		flex:1;
+		margin: 3% 5%;
+
+		a {
+			padding: 3% 5%;
+			font-size: 2rem;
+			color: #fff;
+			font-weight: 300;
+			white-space: nowrap;
+		}
+	}
+
+	.again {
+		background-color: #f66f6f;
+	}
+
+	.share {
+		background-color: #fbb435;
+	}
+}
