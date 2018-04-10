@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title></title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <style>
+
+        .menubox{
+            position:absolute;
+            top:2px;
+            left:-200px;
+            width:200px;
+            height:100%;
+            z-index:99;
+            background-color:white;
+            transition:all 0.2s;
+        }
+        .active{
+            display:block;
+            left:0px;
+        }
+        .menubox ul{
+            list-style:none;
+            padding:.3rem 0 0 0;
+        }
+        .menubox ul li{
+            line-height:40px;
+            font-size:20px;
+            text-align:center;
+            color:rgb(41, 189, 224);
+            border-bottom:1px solid #efefef;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#home").click(function(){
+                console.log($("#home"));
+                if($(this).hasClass('active')){
+                    $(this).removeClass('active');
+                    $(".menubox").removeClass('active')
+                }
+                else{
+                    $(this).addClass('active');
+                    $(".menubox").addClass('active')
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <header id="header">
+        <a id="home"><img id="home" src="images/item.png" alt=""></a>
+    </header><!-- /header -->
+    <main>
+        <div class="menubox">
+            <ul class="menu">
+                <li>公告</li>
+                <li>关于</li>
+            </ul>
+        </div>
+        <div class="container-fluid">
+            <div class="row row1">
+                            <a href="">
+                                <div class="col-xs-10">
+                                    上次游戏：捉鬼猜词版
+                                </div>
+                                <div class="col-xs-2">
+                                    <img src="images/arr.png">
+                                </div>
+                            </a>
+                </div>
+            <div class="row row2">
+                <div class="title">
+                    捉鬼游戏
+                </div>
+                <div class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="col-xs-12 v-platform">
+                                <div class="row version">
+                                    <a onclick="location.href='vote.html'">简化版</a>
+                                </div>
+                                <p>有1133个用户在玩此游戏</p>
+                                <div class="row version">
+                                    <a href="vote.html">猜词版</a>
+                                </div>
+                                <p>有1133个用户在玩此游戏</p>
+                                <div class="row version">
+                                    <a href="vote.html">白痴版</a>
+                                </div>
+                                <p class="add">有1133个用户在玩此游戏</p>
+                            </div>
+                        </div>
+                    </div>
+                     <a class="carousel-control right" href="#myCarousel" role="button" data-slide="next">
+                        <img src="images/carousel-right.png" class="cher-right">
+                     </a>
+                </div>
+            </div>
+        </div>
+
+
+</main>
+
+</body>
+</html>
