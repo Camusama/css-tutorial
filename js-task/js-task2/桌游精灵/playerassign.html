@@ -7,31 +7,36 @@
     <title></title>
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/playerassign.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</script>
 </head>
 <body>
     <header>
-        <a href="" title=""><</a>
+        <a href="index.html" title=""><</a>
     </header><!-- /header -->
     <main>
     <div class="title">
         玩家配比
     </div>
     <div class="player-match">
-            <div class="killer"></div>
-            <div class="folk"></div>
+            <div class="killer" id="knum"></div>
+            <div class="folk" id="fnum"></div>
     </div>
     <div class="player-word">
         <input type="text" name="folkword" placeholder="水民词组：">
         <input type="text" name="gostword" placeholder="幽灵词组：">
     </div>
     <div class="player-num">
-        <span class="num">请输入玩家数量</span><input type="text" name="players"><span class="yel">玩家数量为4-18</span>
+        <span class="num">请输入玩家数量</span>
+        <input type="text" id="inputnum" name="number" value="" onblur="obtain()">
+        <span class="yel">玩家数量为4-18</span>
     </div>
     </main>
     <footer>
-        <button type="button">
-            <a id="pop" onclick="shuffled()">去发牌</a>
+        <button type="button" id="pop" onclick="shuffled()">
+            <a>去发牌</a>
         </button>
     </footer>
+    <script src="js/playerassign.js"></script>
 </body>
 </html>
