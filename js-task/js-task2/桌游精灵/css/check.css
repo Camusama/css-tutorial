@@ -50,7 +50,6 @@ main .wrap .flop {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
 }
 main .wrap #show-id {
   text-align: center;
@@ -64,8 +63,11 @@ main .wrap #show-id img {
 main .wrap #show-id #id {
   color: #29bde0;
 }
+main .wrap #show-id #word {
+  color: red;
+}
 main .wrap #show-id p {
-  margin-top: 110px;
+  margin-top: 40px;
   padding: 20px 20px;
   font-size: 24px;
   color: #fab344;
@@ -90,4 +92,10 @@ footer button {
   border-radius: 2px;
   color: white;
   line-height: 48px;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
 }

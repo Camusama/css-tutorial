@@ -11,29 +11,28 @@
 </head>
 <body>
     <header>
-        <a href="playerassign.html" title=""><</a>
+        <a id="rollback" href="playerassign.html" title=""><</a>
     </header><!-- /header -->
     <main>
         <div class="wrap">
             <h1 id="titnum">1</h1>
             <img class="flop" src="images/flop.png">
-            <div id="show-id">
+            <div id="show-id" class="hide">
                 <img src="images/show.png">
-                <h2 id="id">角色：平民</h2>
+                <h2 id="id">平民</h2>
+                <h2 id="word">词组：11</h2>
                 <p>想办法猜中别人的词，同时还要注意不要暴露自己喔！</p>
             </div>
         </div>
     </main>
     <footer>
-        <button type="button" id="" onclick="">
-            查看 <span id="checkbtn">1</span>号身份
+        <button type="button" id="btn">
+            <span id="checkbtn">查看1号身份</span>
+        </button>
+        <button type="button" id="btn2" class="hide">
+            <span id="checkbtn">法官查看</span>
         </button>
     </footer>
-    <script>
-        var playersum;
-        window.onload=function(){
-            console.log(localStorage.getItem(playersum));
-        }
-    </script>
+    <script src="js/check.js"></script>
 </body>
 </html>
